@@ -3,13 +3,16 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
   "name": "zookeepr",
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ozqr20/zookeepr.git"
