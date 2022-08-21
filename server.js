@@ -109,6 +109,20 @@ app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+app.get('/animals', (req,res) => {
+  res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req,res) => {
+  res.sendFile(path.join(__dirname,'./public/zookeepers.html'));
+});
+
+// It will redirect the user if the path does not exist 
+// this route should always come last, otherwise will take precedence over named routes
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 app.post('/api/animals', (req, res) => {
   // set id based on what the next index of the array will be
   req.body.id = animals.length.toString();
