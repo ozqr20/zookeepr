@@ -135,6 +135,19 @@
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "Leon",
+      "species": "Felino",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "anxious",
+        "loving",
+        "goofy"
+      ],
+      "id": "14"
     }
   ]
 }
